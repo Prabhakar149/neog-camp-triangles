@@ -3,15 +3,18 @@ const areaButton = document.querySelector(".area-btn");
 const areaMessage = document.querySelector(".area-msg");
 
 function calculateAreaOfTriangle(){
-    // e.preventDefault();
 
     const firstSide = Number(inputSides[0].value);
     const secondSide = Number(inputSides[1].value);
     const thirdSide = Number(inputSides[2].value);
     if (firstSide && secondSide && thirdSide){
-        const s = semiPerimeter(firstSide,secondSide,thirdSide);
-        const result = areaOfTriangle(s,firstSide,secondSide,thirdSide);
-        areaMessage.innerText = `Area of a triangle using heron's formula is ${result} units`;
+        if(firstSide+secondSide>thirdSide && secondSide+thirdSide>firstSide && firstSide+thirdSide>secondSide){
+            const s = semiPerimeter(firstSide,secondSide,thirdSide);
+            const result = areaOfTriangle(s,firstSide,secondSide,thirdSide);
+            areaMessage.innerText = `Area of a triangle using heron's formula is ${result} units`;
+        }else{
+            areaMessage.innerText = "Please enter valid side of lengths of triangle";
+        }
     }else{
         areaMessage.innerText = "Please enter the all sides of triangle";
     }
