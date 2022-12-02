@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Area</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/">home</a>
+        <a href="/quiz.html">quiz</a>
+        <a href="/istriangle.html">isTriangle</a>
+        <a href="/hypotenuse.html">hypotenuse</a>   
+        <a style="font-weight: bolder;" href="/area.html">area</a>
+      </nav>
+    </header>
+    <main>
+        <h1>Calculate Aera of a triangle</h1>
+        <label for="first-side" class="input-label">Enter first side of triangle:</label>
+        <input required type="number" id="first-side" class="input-side input-text"/>
+        <label for="second-side" class="input-label">Enter second side of triangle:</label>
+        <input required type="number" id="second-side" class="input-side input-text"/>
+        <label for="third-side" class="input-label">Enter third side of triangle:</label>
+        <input required type="number" id="third-side" class="input-side input-text"/>
+        <button class="area-btn btn-check">calculate area</button>
+     
+        <p class="area-msg output"></p>
+    </main>
+
+    <script src="./area.js"></script>
+  </body>
+</html>
