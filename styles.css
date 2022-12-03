@@ -219,7 +219,8 @@ img {
     text-align: center;
   }
   nav > a {
-    padding: 1rem 4rem;
+    margin: 1.5rem 0;
+    padding: 3rem 4rem;
   }
   nav > a:nth-child(1) {
     font-size: inherit;
