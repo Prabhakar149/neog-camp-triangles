@@ -206,16 +206,20 @@ img {
 /* ______________________________________________ */
 /* for small screen devices */
 @media (max-width: 360px) {
+  header{
+    height: 10rem;
+  }
   body {
     /* max-width: 100%; */
     width: 100%;
     text-align: center;
   }
   nav {
+    margin-top: 1rem;
     text-align: center;
   }
   nav > a {
-    padding: 5rem 0.8rem;
+    padding: 1rem 4rem;
   }
   nav > a:nth-child(1) {
     font-size: inherit;
