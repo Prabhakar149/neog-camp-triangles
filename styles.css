@@ -142,6 +142,8 @@ footer {
 footer p {
   font-size: large;
   text-align: center;
+  position: relative;
+  top: 0.8rem;
 }
 
 
@@ -201,10 +203,16 @@ img {
     position: absolute;
     left: 0rem;
   }
+  .istriangle-footer{
+    top: 35rem;
+  }
+  .area-footer{
+    top: 35rem;
+  }
 }
 
 /* ______________________________________________ */
-/* for small screen devices */
+/* for extra small screen devices */
 @media (max-width: 360px) {
   header{
     height: 10rem;
